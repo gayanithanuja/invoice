@@ -6,6 +6,7 @@ import {
   BarChart3, Package, User, Settings, LogOut, 
   Search, Bell, ChevronDown 
 } from 'lucide-react';
+import DashboardContent from '../components/dashboard/DashboardContent';
 
 export default function Dashboard() {
   const [activeTab, setActiveTab] = useState('DashBoard');
@@ -108,9 +109,11 @@ export default function Dashboard() {
 
         {/* Content Area */}
         <section className="px-10 py-4">
-          <div className="border-2 border-dashed border-gray-100 rounded-3xl h-[70vh] flex items-center justify-center text-gray-300">
+          
+            <DashboardContent></DashboardContent>
+          {/* <div className="border-2 border-dashed border-gray-100 rounded-3xl h-[70vh] flex items-center justify-center text-gray-300">
             Content for {activeTab} goes here...
-          </div>
+          </div> */}
         </section>
 
       </main>
